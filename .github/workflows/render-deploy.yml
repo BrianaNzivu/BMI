@@ -19,8 +19,8 @@ jobs:
     - name: Invoke deployment hook
       uses: distributhor/workflow-webhook@v2
       env:
-        webhook_url: ${{secrets.DEPLOY_HOOK_URL}}
-        webhook_secret: ${{secrets.DEPLOY_HOOK_KEY}}
+        webhook_url: 'https://api.render.com/deploy/srv-ciofmbenqqlfegd1bum0?key=7vF-N2jZnYI'
+        webhook_secret: '7vF-N2jZnYI'
         
     - uses: bounceapp/render-action@0.6.0
       with:
